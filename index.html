@@ -5,24 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      /* 
+            Body: #141414
+            kutu: #1f1f1f
+            Button: #333333
+            Yeşil metin: #94af40
+        */
+      body {
+        background-color: #141414;
+      }
       .kutu {
-        width: 100px;
-        height: 100px;
-        background-color: hotpink;
-        display: block;
-        clear: both;
-      }
-      .sag-kutu {
-        float: right;
-      }
-      .ortala {
+        background-color: #1f1f1f;
+        max-width: 300px;
+        min-height: 100px;
         margin: auto;
+        padding: 15px;
+        border-radius: 5%;
+        /* Cascade özelliğinden faydalandım */
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .kutu img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50px;
+        margin: auto;
+        display: block;
+      }
+
+      .kutu .isim {
+        display: block;
+        margin-top: 16px;
+      }
+      .kutu .adres {
+        display: block;
+        margin-top: 8px;
+        color: #d7fa51;
+      }
+      .kutu .slogan {
+        display: block;
+        margin-top: 16px;
+        color: #999;
+      }
+      .kutu a {
+        all: unset;
+        background-color: #333333;
+        display: block;
+        padding: 8px;
+        border-radius: 8px;
+        margin: 10px;
       }
     </style>
   </head>
   <body>
-    <div class="kutu sag-kutu">Kutu1</div>
-    <div class="kutu">Kutu2</div>
-    <div class="kutu ortala">Kutu3</div>
+    <div class="kutu">
+      <img
+        src="https://content.imageresizer.com/images/memes/smart-shrek-meme-5.jpg"
+      />
+      <span class="isim">Berke Coruk</span>
+      <span class="adres">Ankara, Türkiye</span>
+      <span class="slogan">Bataklıkların efendisi</span>
+      <a href="https://github.com/BerkeCoruk">Github</a>
+      <a href="https://github.com/BerkeCoruk">Frontend Mentor</a>
+      <a href="https://www.linkedin.com/in/berke-coruk-063014148/">LinkedIn</a>
+      <a href="https://x.com">X</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+    </div>
   </body>
 </html>
